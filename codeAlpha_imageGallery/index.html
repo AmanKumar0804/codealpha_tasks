@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="gallery-container">
+        <h1>Interactive Gallery</h1>
+        
+        <div class="filter-wrapper">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+            <button class="filter-btn" data-filter="animals">Animals</button>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid">
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=600&q=80" alt="Mountain Landscape">
+                <div class="item-overlay"><span>View Image</span></div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=600&q=80" alt="Forest Path">
+                <div class="item-overlay"><span>View Image</span></div>
+            </div>
+
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Modern Skyscraper">
+                <div class="item-overlay"><span>View Image</span></div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?auto=format&fit=crop&w=600&q=80" alt="Golden Gate Bridge">
+                <div class="item-overlay"><span>View Image</span></div>
+            </div>
+
+            <div class="gallery-item" data-category="animals">
+                <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=600&q=80" alt="Red Fox">
+                <div class="item-overlay"><span>View Image</span></div>
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=600&q=80" alt="Majestic Lion">
+                <div class="item-overlay"><span>View Image</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <button class="nav-btn prev-btn" id="prev-btn">&#10094;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Popup view">
+        </div>
+        <button class="nav-btn next-btn" id="next-btn">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
